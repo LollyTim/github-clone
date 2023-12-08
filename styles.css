@@ -11,7 +11,7 @@ body {
 
 
 
-button {
+.butto {
     padding: 4px;
     padding-bottom: 2px;
     background: transparent;
@@ -26,6 +26,8 @@ button:hover {
 
 
 .AllNavigation {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     padding-left: 30px;
@@ -52,6 +54,12 @@ button:hover {
     height: fit-content;
     align-items: center;
 }
+
+/* .NavItem3 {
+    min-width: 115px;
+    display: flex;
+    flex-wrap: nowrap;
+} */
 
 
 .NavSideA>.bar {
@@ -186,21 +194,59 @@ button:hover {
 .Navigation2 {
     display: flex;
     flex-direction: row;
-    gap: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+}
 
+
+.Navigation2Content1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: inherit;
+}
+
+.NavItemHolder {
+    color: #C9D1D9;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: inherit;
+
+
+}
+
+.NavItem1Holder {
+    color: #C9D1D9;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: inherit;
+    border-bottom: 2px solid #f78166;
+}
+
+.Navigation>button {
+    padding: 4px;
+    padding-bottom: 2px;
+    background: transparent;
+    border: 0.5px solid rgb(70, 70, 70);
+    border-radius: 3px;
+    color: #8b949e;
+    background: red;
 }
 
 .NavItem1 {
     color: #C9D1D9;
     display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 16px;
+    gap: 4px;
+    font-size: 14px;
     flex-direction: row;
     padding: 6px;
     border-radius: 8px;
+
 
 }
 
@@ -209,7 +255,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 16px;
+    font-size: 14px;
     flex-direction: row;
     padding: 6px;
     border-radius: 8px;
@@ -221,10 +267,11 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 16px;
+    font-size: 14px;
     flex-direction: row;
     padding: 6px;
     border-radius: 8px;
+    white-space: nowrap;
 
 }
 
@@ -245,7 +292,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 6px;
     border-radius: 8px;
     flex-direction: row;
@@ -257,7 +304,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 6px;
     border-radius: 8px;
     flex-direction: row;
@@ -269,7 +316,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 16px;
+    font-size: 14px;
     flex-direction: row;
     padding: 6px;
     border-radius: 8px;
@@ -316,4 +363,287 @@ button:hover {
     padding: 6px;
     border-radius: 8px;
     background-color: #161b22;
+}
+
+.threedotbtn {
+    background: #171b20;
+    width: 28px;
+    display: none;
+}
+
+
+
+/* oneline section starts below here ------- */
+
+
+.OneLineSection {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #383b3d;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Onelineside1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    gap: 10px;
+}
+
+.Onelineside1>p {
+    border: 1px solid #383b3d;
+    padding: 2px 5px;
+    border-radius: 15px;
+    color: #848d97;
+    font-size: small;
+}
+
+
+.Onelineside1>h1 {
+    color: #e6edf3;
+}
+
+.Onelineside1>h1:hover {
+    color: #e6edf3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ////////// */
+
+.Onelineside2 {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+
+}
+
+.watch {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    color: #848d97;
+    border: 1px solid #383b3d;
+    background: #22262d;
+    outline: none;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 8px;
+    /* width: 80px;
+    height: 30px; */
+}
+
+.watch:hover {
+    background: #40474e;
+}
+
+.watch>span {
+    height: fit-content;
+    width: 15px;
+    padding: 4px;
+    font-size: small;
+    border-radius: 200px;
+    background: #40474e;
+}
+
+
+
+
+.forkbtn {
+    display: flex;
+    flex-direction: row;
+    color: #848d97;
+    border: 1px solid #383b3d;
+    background: #22262d;
+    outline: none;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 14px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.forkbtn:hover {
+    background: #40474e;
+}
+
+.forkbtn>span {
+    height: fit-content;
+    width: 15px;
+    padding: 4px;
+    font-size: small;
+    border-radius: 200px;
+    background: #40474e;
+}
+
+.caret01 {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    color: #848d97;
+    border: 1px solid #383b3d;
+    background: #22262d;
+    outline: none;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 14px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.caret01:hover {
+    background: #40474e;
+}
+
+.themagic>h2 {
+    color: #8b949e;
+    padding-bottom: 10px;
+}
+
+.themagicitems {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.themagic>h2 {
+    font-size: medium;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.themagicitems>p {
+    color: #8b949e;
+    font-size: medium;
+}
+
+.themagicitems>p:hover {
+    color: #07366b;
+    cursor: pointer;
+}
+
+.themagicitems>p>span {
+    color: rgb(74, 81, 93);
+    font-size: small;
+}
+
+.themagicCont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.alone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.themagic {
+    display: none;
+}
+
+
+@media (max-width:1012px) {
+
+    .search>.asideInput {
+        display: none;
+    }
+
+    .search>input {
+        display: none;
+    }
+
+    .search {
+        width: fit-content;
+        /* border: none; */
+        padding: 4px;
+    }
+
+    .search>svg {
+        padding: 3px;
+        background: transparent;
+        /* border: 0.5px solid rgb(70, 70, 70); */
+        border-radius: 3px;
+        color: #8b949e;
+    }
+
+}
+
+@media (max-width:764px) {
+    .divider {
+        display: none;
+    }
+
+    .addandCaret {
+        display: none;
+    }
+
+    .circledot {
+        display: none;
+    }
+
+    .pullRequest {
+        display: none;
+    }
+
+    .nameandRepo {
+        display: block;
+        gap: 0;
+        margin: 0;
+        line-height: 10px;
+    }
+
+    .nameandRepo>p:nth-child(2) {
+        display: none;
+    }
+
+    .nameandRepo>p:nth-child(1) {
+        font-size: small;
+    }
+}
+
+@media (max-width:742px) {
+    .NavItem7 {
+        display: none;
+    }
+
+    .threedotbtn {
+        background: #171b20;
+        justify-content: center;
+        width: 26px;
+        display: flex;
+    }
+
+}
+
+@media (max-width:690px) {
+    .NavItem6 {
+        display: none;
+    }
+}
+
+@media (max-width:642px) {
+    .NavItem5 {
+        display: none;
+    }
+}
+
+@media (max-width:468px) {
+    .NavItem4 {
+        display: none;
+    }
 }
