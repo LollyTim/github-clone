@@ -1224,7 +1224,16 @@ button:hover {
     gap: 10px;
 }
 
-
+footer {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    width: auto;
+}
 
 .footsy {
     width: auto;
